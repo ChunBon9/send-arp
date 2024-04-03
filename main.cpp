@@ -162,7 +162,6 @@ int main(int argc, char* argv[]) {
 	
 	my_mac = Mac(mac);
 	
-	Mac target_mac;
 	Mac sender_mac;
 	uint32_t sender_ip;
 	uint32_t target_ip;
