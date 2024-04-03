@@ -172,10 +172,6 @@ int main(int argc, char* argv[]) {
 		target_ip = Ip((argv[i + 1]));
 		
 		printf("\nSENDER IP : %s\tTARGET IP : %s\n\n", argv[i], argv[i+1]);
-		printf("FIND TARGET MAC\n");
-		if(get_dest_mac(handle ,&packet, Mac("FF:FF:FF:FF:FF:FF"), my_mac, my_mac, my_ip, Mac("00:00:00:00:00:00"), target_ip, &target_mac, 1) == 0) return 0;
-		printf("TARGET MAC : ");
-		print_MAC(target_mac);
 		
 		printf("FIND SENDER MAC\n");
 		if(get_dest_mac(handle ,&packet, Mac("FF:FF:FF:FF:FF:FF"), my_mac, my_mac, my_ip, Mac("00:00:00:00:00:00"), sender_ip, &sender_mac, 1) == 0) return 0;
